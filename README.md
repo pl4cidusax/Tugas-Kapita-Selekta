@@ -1,13 +1,40 @@
-**Tugas Project Socket Programing Kelompok 4**
+# Mini Chat Client-Server (TCP Socket Python)
 
-Proyek ini merupakan implementasi sistem client-server sederhana berbasis TCP Socket menggunakan Python. Sistem ini memungkinkan beberapa client untuk mengirim pesan ke server, menyimpan pesan, serta mengambil riwayat percakapan.
-Dikembangkan sebagai tugas kelompok untuk mata kuliah Sistem Komputer dan Jaringan.
+## Deskripsi
+Program ini merupakan implementasi sistem client-server sederhana menggunakan protokol TCP di Python.
+Server menerima perintah dari client untuk menyimpan pesan dan menampilkan riwayat pesan.
 
-**Tim Pengembang (Kelompok 4)**
-Fathiyah Audyna Ramadhani (23/514605/PA/21995)
-Andita Yudha Astuti (23/523214/PA/22512)
-Faisha Aldila Putri (23/520308/PA/22366)
-Wan Mohammad Renjiro Anza (22/497963/PA/21471)
+## File
+- server.py  : Program server
+- client.py  : Program client
+- README.md  : Dokumentasi singkat penggunaan
 
-Program Studi Elektronika dan Instrumentasi
-Universitas Gadjah Mada – 2026
+## Cara Menjalankan
+
+### 1. Jalankan Server
+Buka terminal dan jalankan:
+python server.py
+
+Atau jika ingin menentukan port:
+python server.py --port 5019
+
+Server akan berjalan dan menunggu koneksi.
+
+### 2. Jalankan Client
+Buka terminal baru dan jalankan:
+python client.py
+
+Atau jika ingin menentukan host/port:
+python client.py --host 127.0.0.1 --port 5019 --user nama_kamu
+
+## Perintah di Client
+- Ketik pesan biasa → akan dikirim ke server
+- /history        → menampilkan 10 pesan terakhir
+- /history 5      → menampilkan 5 pesan terakhir
+- /help           → menampilkan bantuan
+- /quit           → keluar dari client
+
+## Catatan
+- Server menggunakan TCP (SOCK_STREAM).
+- Pesan disimpan di memori (akan hilang jika server restart).
+- Log aktivitas disimpan di file chat.log.
