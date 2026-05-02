@@ -2,8 +2,6 @@
 
 > Tugas KSJ Kelompok 4 — komunikasi dua arah antara ESP32 (disimulasikan di Wokwi) dan server Python di laptop, melalui HTTP yang di-tunnel oleh ngrok.
 
-**Penulis:** Fathiyah Audyna Ramadhani
-
 ---
 
 ## Daftar Isi
