@@ -1,6 +1,6 @@
 # IoT Socket Programming — ESP32 to Server Laptop
 
-> Tugas Praktikum IoT — komunikasi dua arah antara ESP32 (disimulasikan di Wokwi) dan server Python di laptop, melalui HTTP yang di-tunnel oleh ngrok.
+> Tugas KSJ Kelompok 4 — komunikasi dua arah antara ESP32 (disimulasikan di Wokwi) dan server Python di laptop, melalui HTTP yang di-tunnel oleh ngrok.
 
 **Penulis:** Fathiyah Audyna Ramadhani
 
